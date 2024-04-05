@@ -10,8 +10,8 @@ buton.addEventListener("click", function(event){
   
   var coluna = document.createElement("tr");
   var linha = document.createElement("td");
-  if(linhaA.value == colunaA.value){
-
+  
+  
   var textoo = document.createElement("p");
   var tabela = document.querySelector("#tabela")
   tabela.innerHTML = "";
@@ -36,8 +36,9 @@ buton.addEventListener("click", function(event){
     var botao = document.createElement("button");
     botao.textContent = "Calcular Determinante";
     tabela.appendChild(botao);
-    if(linhaA.value >1 && linha.value <6 && colunaA.value>1 && colunaA.value<6){
-    if(linhaA.value == 2 && colunaA.value == 2){
+    if(linhaA.value == colunaA.value && linhaA.value >1 && linha.value <6 && colunaA.value>=1 && colunaA.value<6){
+    
+        if(linhaA.value == 2 && colunaA.value == 2){
     
     var determinante = 0;
     botao.addEventListener("click", function(event){
@@ -99,7 +100,7 @@ buton.addEventListener("click", function(event){
             document.querySelector("#resultado").textContent = determinante;
         });
     }
-    else{ alert("O numero de Linhas da matriz A deve ser igual ao numero de Colunas da matriz B de 2x2 a 5x5")}
+   
     
     function cofatorExpansion(matrix) {
         if (matrix.length === 1) {
@@ -120,8 +121,8 @@ buton.addEventListener("click", function(event){
     function getMinor(matrix, row, col) {
         return matrix.filter((_, r) => r !== row).map(row => row.filter((_, c) => c !== col));
     }
-} else{alert("O numero de Linhas da matriz A deve ser igual ao numero de Colunas da matriz B de 2x2 a 5x5")}
+}else{alert("O numero de Linhas da matriz A deve ser igual ao numero de Colunas da matriz B de 2x2 a 5x5")}
 
-}
-else{alert("O numero de Linhas da matriz A deve ser igual ao numero de Colunas da matriz B de 2x2 a 5x5")}
+
+
 })
