@@ -36,7 +36,7 @@ buton.addEventListener("click", function(event){
     var botao = document.createElement("button");
     botao.textContent = "Calcular Determinante";
     tabela.appendChild(botao);
-    if(linhaA.value >=2 && linha.value <5 && colunaA.value>=2 && colunaA.value<5){
+    if(linhaA.value >1 && linha.value <6 && colunaA.value>1 && colunaA.value<6){
     if(linhaA.value == 2 && colunaA.value == 2){
     
     var determinante = 0;
