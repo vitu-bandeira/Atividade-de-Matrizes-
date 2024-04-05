@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Multiplicação de Matrizes</a></li>
+          <li><a href="Quadrado magico.html">Quadrado Magico</a></li>
+          <li><a href="Matriz tranposta.html">Matriz Transposta</a></li>
+          <li><a href="Determinantes.html">Determinantes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <link rel="stylesheet" href="home.css">
+    <title>Matriz Transposta</title>
+    <style>
+        
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color:rgb(143, 223, 234);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+    
+
+        h1 {
+            text-align: center;
+            margin-top: 50px;
+        }
+
+        h2 {
+            margin-top: 30px;
+        }
+        input{
+            border: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgb(43, 127, 157);
+            background-color: #fff;
+            
+        }
+
+        td {
+            padding: 10px;
+            text-align: center;
+            border: 1px solid #ccc;
+        }
+
+        input[type="text"] {
+            width: 40px;
+            height: 40px;
+            text-align: center;
+        }
+
+        button{
+           margin-top: 40px;
+           border-radius: 7px;
+            border: none;
+           padding: 7px;
+        }
+        button:hover{
+            background-color: rgba(67, 67, 67, 0.479);
+            color: white;
+            cursor: pointer;
+        
+        }
+        table.matrizTransposta {
+            margin-top: 20px;
+            width: 20px;
+        }
+       
+        #matrizTransposta td {
+        padding: 20px; /* Aumenta o espaçamento interno das células */
+        font-size: 20px; /* Aumenta o tamanho da fonte */
+        width: 20px; /* Ajusta a largura das células */
+        height: 20px; /* Ajusta a altura das células */
+}
+    </style>
+</head>
+<body>
+    <h1>Matriz Transposta</h1>
+
+    <h2>Insira os valores da matriz:</h2>
+    <table id="t3">
+        <tr>
+            <td><input type="text" id="a61"></td>
+            <td><input type="text" id="a62"></td>
+            <td><input type="text" id="a63"></td>
+            <td><input type="text" id="a64"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a71"></td>
+            <td><input type="text" id="a72"></td>
+            <td><input type="text" id="a73"></td>
+            <td><input type="text" id="a74"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a81"></td>
+            <td><input type="text" id="a82"></td>
+            <td><input type="text" id="a83"></td>
+            <td><input type="text" id="a84"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a91"></td>
+            <td><input type="text" id="a92"></td>
+            <td><input type="text" id="a93"></td>
+            <td><input type="text" id="a94"></td>
+        </tr>
+    </table>
+    <button onclick="calcularMatrizTransposta4x4()">Calcular</button>
+    <script>
+        function calcularMatrizTransposta4x4() {
+            var a61 = document.getElementById("a61").value;
+            var a62 = document.getElementById("a62").value;
+            var a63 = document.getElementById("a63").value;
+            var a64 = document.getElementById("a64").value;
+            var a71 = document.getElementById("a71").value;
+            var a72 = document.getElementById("a72").value;
+            var a73 = document.getElementById("a73").value;
+            var a74 = document.getElementById("a74").value;
+            var a81 = document.getElementById("a81").value;
+            var a82 = document.getElementById("a82").value;
+            var a83 = document.getElementById("a83").value;
+            var a84 = document.getElementById("a84").value;
+            var a91 = document.getElementById("a91").value;
+            var a92 = document.getElementById("a92").value;
+            var a93 = document.getElementById("a93").value;
+            var a94 = document.getElementById("a94").value;
+            
+            document.getElementById("b61").innerHTML = a61;
+            document.getElementById("b62").innerHTML = a71;
+            document.getElementById("b63").innerHTML = a81;
+            document.getElementById("b64").innerHTML = a91;
+            document.getElementById("b71").innerHTML = a62;
+            document.getElementById("b72").innerHTML = a72;
+            document.getElementById("b73").innerHTML = a82;
+            document.getElementById("b74").innerHTML = a92;
+            document.getElementById("b81").innerHTML = a63;
+            document.getElementById("b82").innerHTML = a73;
+            document.getElementById("b83").innerHTML = a83;
+            document.getElementById("b84").innerHTML = a93;
+            document.getElementById("b91").innerHTML = a64;
+            document.getElementById("b92").innerHTML = a74;
+            document.getElementById("b93").innerHTML = a84;
+            document.getElementById("b94").innerHTML = a94;
+        }
+    </script>
+
+    <h2>
+    Matriz Transposta 4x4:</h2>
+    <table id="matrizTransposta">
+        <tr>
+            <td id="b61"></td>
+            <td id="b62"></td>
+            <td id="b63"></td>
+            <td id="b64"></td>
+        </tr>
+        <tr>
+            <td id="b71"></td>
+            <td id="b72"></td>
+            <td id="b73"></td>
+            <td id="b74"></td>
+        </tr>
+        <tr>
+            <td id="b81"></td>
+            <td id="b82"></td>
+            <td id="b83"></td>
+            <td id="b84"></td>
+        </tr>
+        <tr>
+            <td id="b91"></td>
+            <td id="b92"></td>
+            <td id="b93"></td>
+            <td id="b94"></td>
+        </tr>
+    </table>
+    <h1>Matriz Transposta 3x3</h1>
+    
+    <h2>Insira os valores da matriz:</h2>
+    <table id="t1">
+        <tr>
+            <td><input type="text" id="a11"></td>
+            <td><input type="text" id="a12"></td>
+            <td><input type="text" id="a13"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a21"></td>
+            <td><input type="text" id="a22"></td>
+            <td><input type="text" id="a23"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a31"></td>
+            <td><input type="text" id="a32"></td>
+            <td><input type="text" id="a33"></td>
+        </tr>
+    </table>
+    
+    <button onclick="calcularMatrizTransposta()">Calcular</button>
+    <script>
+        function calcularMatrizTransposta() {
+            var a11 = document.getElementById("a11").value;
+            var a12 = document.getElementById("a12").value;
+            var a13 = document.getElementById("a13").value;
+            var a21 = document.getElementById("a21").value;
+            var a22 = document.getElementById("a22").value;
+            var a23 = document.getElementById("a23").value;
+            var a31 = document.getElementById("a31").value;
+            var a32 = document.getElementById("a32").value;
+            var a33 = document.getElementById("a33").value;
+            
+            document.getElementById("b11").innerHTML = a11;
+            document.getElementById("b12").innerHTML = a21;
+            document.getElementById("b13").innerHTML = a31;
+            document.getElementById("b21").innerHTML = a12;
+            document.getElementById("b22").innerHTML = a22;
+            document.getElementById("b23").innerHTML = a32;
+            document.getElementById("b31").innerHTML = a13;
+            document.getElementById("b32").innerHTML = a23;
+            document.getElementById("b33").innerHTML = a33;
+        }
+    </script>
+    
+    <h2>Matriz Transposta 3x3:</h2>
+    <table id="matrizTransposta">
+        <tr>
+            <td id="b11"></td>
+            <td id="b12"></td>
+            <td id="b13"></td>
+        </tr>
+        <tr>
+            <td id="b21"></td>
+            <td id="b22"></td>
+            <td id="b23"></td>
+        </tr>
+        <tr>
+            <td id="b31"></td>
+            <td id="b32"></td>
+            <td id="b33"></td>
+        </tr>
+    </table>
+    
+    <h1>Matriz Transposta 2x2</h1>
+
+    <h2>Insira os valores da matriz:</h2>
+    <table id="t2">
+        <tr>
+            <td><input type="text" id="a41"></td>
+            <td><input type="text" id="a42"></td>
+        </tr>
+        <tr>
+            <td><input type="text" id="a51"></td>
+            <td><input type="text" id="a52"></td>
+        </tr>
+    </table>
+
+    <button onclick="calcularMatrizTransposta2x2()">Calcular</button>
+    <script>
+        function calcularMatrizTransposta2x2() {
+            var a41 = document.getElementById("a41").value;
+            var a42 = document.getElementById("a42").value;
+            var a51 = document.getElementById("a51").value;
+            var a52 = document.getElementById("a52").value;
+            
+            document.getElementById("b41").innerHTML = a41;
+            document.getElementById("b42").innerHTML = a51;
+            document.getElementById("b51").innerHTML = a42;
+            document.getElementById("b52").innerHTML = a52;
+        }
+    </script>
+
+    <h2>Matriz Transposta 2x2:</h2>
+    <table id="matrizTransposta">
+        <tr>
+            <td id="b41"></td>
+            <td id="b42"></td>
+        </tr>
+        <tr>
+            <td id="b51"></td>
+            <td id="b52"></td>
+        </tr>
+    </table>
+    
+
+
+</body>
+</html>

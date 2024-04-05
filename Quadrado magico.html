@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matriz Quadrado Magico</title>
+    <nav>
+        <ul class="navigation">
+          <li><a href="index.html">Multiplicação de Matrizes</a></li>
+          <li><a href="Quadrado magico.html">Quadrado Magico</a></li>
+          <li><a href="Matriz tranposta.html">Matriz Transposta</a></li>
+          <li><a href="Determinantes.html">Determinantes</a></li>
+        </ul>
+      </nav>
+    </header>
+    <link rel="stylesheet" href="home.css">
+    <style>
+
+        td{
+            padding: 1px;
+            margin: 10px;
+        }
+        
+        tbody{
+            border-left: 6px solid black;
+            border-right: 6px solid;
+        }
+        button{
+           margin-top: 40px;
+           border-radius: 7px;
+            border: none;
+           padding: 7px;
+        }
+        button:hover{
+            background-color: rgba(67, 67, 67, 0.479);
+            color: white;
+            cursor: pointer;
+          
+
+        }
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        
+        
+        
+        table {
+            
+            margin-top: 20px;
+            box-shadow: 0 4px 8px rgb(43, 127, 157);
+            background-color: #fff;
+            
+        }
+        
+        td {
+            
+            padding: 40px;
+            
+    
+        }
+
+    </style>
+    
+</head>
+<body>
+    <h1>Matriz Quadrado Magico</h1>
+    <table>
+    
+        <tr> 
+            <td id="1"></td>
+            <td id="2"></td>
+            <td id="3"></td>
+        </tr>
+        <tr>
+            <td id="4"></td>
+            <td id="5"></td>
+            <td id="6"></td>
+        </tr>
+        <tr>
+            <td id="7"></td>
+            <td id="8"></td>
+            <td id="9"></td>
+        </tr>
+        
+    </table>
+    <button onclick="Somas_Iguais()">Criar Matriz</button> <br>
+    <h1>Quadrado Mágico 4x4</h1>
+    <table>
+        <tr>
+            <td id="m1"></td>
+            <td id="m2"></td>
+            <td id="m3"></td>
+            <td id="m4"></td>
+        </tr>
+        <tr>
+            <td id="m5"></td>
+            <td id="m6"></td>
+            <td id="m7"></td>
+            <td id="m8"></td>
+        </tr>
+        <tr>
+            <td id="m9"></td>
+            <td id="m10"></td>
+            <td id="m11"></td>
+            <td id="m12"></td>
+        </tr>
+        <tr>
+            <td id="m13"></td>
+            <td id="m14"></td>
+            <td id="m15"></td>
+            <td id="m16"></td>
+        </tr>
+    </table>
+    
+
+    <script src="main.js"></script>
+    <button id="criar Matriz" onclick="criar_matriz4x4()">Criar Matriz 4x4</button
+
+</body>
+</html>
